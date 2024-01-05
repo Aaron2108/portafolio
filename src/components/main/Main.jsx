@@ -10,7 +10,7 @@ const Main = ({dark}) => {
                 <span className="span_animado">Front-end Developer</span>
                 <div className='div_cv'>
                   <button className={`button_cv ${dark === true ? 'buttoncv_dark' : ''}`}>
-                  <a className={`${dark === true ? 'a_dark' : ''}`} href="./dowload/OliverCv.pdf" download>
+                  <a className={`${dark === true ? 'a_dark' : ''}`} href="./dowload/OliverCvP.pdf" download>
                   Descargar CV
                   </a>
                   </button>
