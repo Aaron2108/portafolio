@@ -127,7 +127,12 @@
     box-shadow: 0 0 40px rgb(255, 255, 255);
     border-radius: 15px;
     transition: 0.7;
-    margin: 100px 0px 50px 0px;
+}
+@media screen and (max-width: 880px){
+    .article_aboutMe_Dark{
+        margin: 100px 0px 50px 0px;
+        transition: 0.7s;
+    }
 }
 
 .frase_dark{
