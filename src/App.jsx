@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import './App.css'
 import ParticlesBackground from './components/particlesBG/ParticlesBackground';
 import NavBarPage from './pages/NavBarPage';
@@ -12,10 +13,11 @@ import './utils/scrollHeader'
 import { useState } from 'react';
 
 function App() {
-
     const [dark, setDark] = useState(false)
-
   return (
+    <>
+    <Analytics />
+
     <div>    
 
       {/*Rutas */}
@@ -36,6 +38,7 @@ function App() {
       </Routes>
 
     </div>
+    </>
   )
 }
 
