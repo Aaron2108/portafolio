@@ -7,7 +7,6 @@ const ProjectsPage = () => {
     <div>
       <Redes/>
       <Projects/>
-      <Footer/>
     </div>
   )
 }

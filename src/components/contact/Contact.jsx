@@ -2,12 +2,12 @@ import './contact.css'
 const Contact = () => {
   return (
     <div>
-        <section className='section_contact'>
+        <section data-aos="zoom-in"  className='section_contact'>
 
-          <article className='article_form'>
+          <article  className='article_form'>
           <h1 className='title_form'>Contactame</h1>
 
-          <form className='formulario' action="https://formsubmit.co/mendezoliver2108@gmail.com" method='POST'>
+          <form className='formulario' action="https://formspree.io/f/mjvnkwva  " method='POST'>
               <div className='div_form'>
               <label  className='label_form' htmlFor="">Nombre</label>
               <input className='input_form' type="text" name='nombre'/> <br/>
@@ -24,7 +24,7 @@ const Contact = () => {
               </div>
 
               <div className='div_form'>
-              <label  className='label_form' htmlFor="">Tema</label>
+              <label  className='label_form'>Tema</label>
               <input className='input_form' type="text" name='tema' />
               </div>
 

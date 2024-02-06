@@ -6,7 +6,6 @@ const AboutPage = ({dark}) => {
     <div>
       <Redes/>
         <About dark={dark}/>
-        <Footer/>
     </div>
   )
 }

@@ -6,7 +6,6 @@ const ContactPage = () => {
     <div>
       <Redes/>
       <Contact/>
-      <Footer/>
     </div>
   )
 }

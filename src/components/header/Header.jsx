@@ -2,6 +2,9 @@ import 'boxicons'
 import './header.css'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBagShopping, faCircleUser, faHouse, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { faAddressCard } from '@fortawesome/free-regular-svg-icons';
 
 const Header = ({setDark, dark}) => {
 
@@ -23,27 +26,27 @@ const Header = ({setDark, dark}) => {
       <nav className='nav'>
         <ul id='ul' className='listas'>
           <li>
-          <box-icon name='home' type='solid' color={`${dark === true ? '#131313': '#ffffff'}`} ></box-icon>
+          <FontAwesomeIcon icon={faHouse} color={`${dark === true ? '#131313': '#ffffff'}`}/>
             <a className='a_header' href="Home"><Link className={`${dark === true ? 'darka' : ''}`} to='/'>Home</Link></a>
           </li>
 
           <li>
-          <box-icon name='user' color={`${dark === true ? '#131313': '#ffffff'}`} ></box-icon>
+          <FontAwesomeIcon icon={faAddressCard} color={`${dark === true ? '#131313': '#ffffff'}`}/>
             <a className='a_header' href="/About"><Link to='/about' className={`${dark === true ? 'darka' : ''}`}>About</Link></a>
           </li>
 
           <li>
-          <box-icon name='briefcase-alt-2' type='solid' color={`${dark === true ? '#131313': '#ffffff'}`} ></box-icon>
+          <FontAwesomeIcon icon={faBagShopping} color={`${dark === true ? '#131313': '#ffffff'}`}/>
           <a className='a_header' href="Projects"><Link to='/projects' className={`${dark === true ? 'darka' : ''}`}>Projects</Link></a>
           </li>
 
           <li>
-          <box-icon name='contact' type='solid' color={`${dark === true ? '#131313': '#ffffff'}`} ></box-icon>
+          <FontAwesomeIcon icon={faCircleUser} color={`${dark === true ? '#131313': '#ffffff'}`}  fontSize="18px"/>
             <a className='a_header' href="Contact"><Link to='/contact' className={`${dark === true ? 'darka' : ''}`}>Contact</Link></a>
           </li>
 
           <li>
-          <button onClick={handleDark} className='button_dark'><box-icon name='moon' type='solid' color={`${dark === true ? '#131313': '#ffffff' }`} ></box-icon></button>
+          <button onClick={handleDark} className='button_dark'><FontAwesomeIcon icon={faMoon} color={`${dark === true ? '#131313': '#ffffff'}`} fontSize='22px'/></button>
           </li>
         </ul>
       </nav>

@@ -2,7 +2,8 @@ import './project.css'
 const Projects = () => {
   return (
     <div>
-        <header className='header_project'>
+        <header data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom" className='header_project'>
           <h1 className='title_header'>Mis Proyectos</h1>
           <p className='description_header'>Si puedes imaginarlo puedes programarlo.</p>
         </header>
@@ -11,8 +12,8 @@ const Projects = () => {
 
         <section className='section_projects'>
 
-          <article className='article_projects'>
-            <div className='container_img'>
+          <article data-aos="zoom-in"  className='article_projects'>
+            <div  className='container_img'>
               <img src="/img/pokedexProject.png" alt="" />
             </div>
             <h2 className='projects_title'>
@@ -60,7 +61,7 @@ const Projects = () => {
 
           {/* TIC-TAC-TOE */}
 
-          <article className='article_projects'>
+          <article  data-aos="zoom-in-up" className='article_projects'>
             <div className='container_img'>
               <img src="/img/tic-tac-to.jpeg" alt="" />
             </div>
@@ -104,7 +105,7 @@ const Projects = () => {
 
             {/* Rick-Morty */}
 
-          <article className='article_projects'>
+          <article data-aos="zoom-in" className='article_projects'>
             <div className='container_img'>
               <img src="/img/rick-and-morty.png" alt="" />
             </div>
@@ -148,7 +149,7 @@ const Projects = () => {
 
           {/* Clima Api */}
 
-          <article className='article_projects'>
+          <article data-aos="zoom-in-up" className='article_projects'>
             <div className='container_img'>
               <img src="/img/clima-api.png" alt="" />
             </div>
@@ -192,7 +193,7 @@ const Projects = () => {
 
           {/*Presupuesto App*/}
 
-          <article className='article_projects'>
+          <article data-aos="zoom-in"  className='article_projects'>
             <div className='container_img'>
               <img src="/img/presupuestoApp.png" alt="" />
             </div>
@@ -232,7 +233,7 @@ const Projects = () => {
 
             {/*Reloj Digital*/}
 
-            <article className='article_projects'>
+            <article data-aos="zoom-in-up"  className='article_projects'>
             <div className='container_img'>
               <img src="/img/relojDigital.png" alt="" />
             </div>
@@ -273,7 +274,7 @@ const Projects = () => {
 
             {/* Cookies-random */}
 
-          <article className='article_projects'>
+          <article data-aos="zoom-in"  className='article_projects'>
             <div className='container_img'>
               <img src="/img/cookies-random.png" alt="" />
             </div>

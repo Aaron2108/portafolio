@@ -1,5 +1,8 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../footer/footer.css'
 import 'boxicons'
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 const Footer = () => {
   return (
     <footer className="footer">
@@ -13,17 +16,23 @@ const Footer = () => {
 
         <div>
         <a href="https://www.linkedin.com/in/oliver-mendez2108/" target="_blank">
-                <box-icon name='linkedin' type='logo' color='#f0f0fa'></box-icon>
+        <FontAwesomeIcon icon={faLinkedinIn} 
+        style={
+        {color:'#f4f6f8',
+        fontSize:'20px'}}/>
         </a>
 
         <a href="https://github.com/Aaron2108?tab=overview&from=2023-11-01&to=2023-11-15" target="_blank">
-            <box-icon name='github' type='logo' color='#f0f0fa' ></box-icon>
+        <FontAwesomeIcon icon={faGithub} 
+        style={
+        {color:'#f4f6f8',
+        fontSize:'20px'}}/>
         </a>
         
-        <a href="https://www.instagram.com/oliver_21m/?hl=es-la" target="_blank">
-            <box-icon name='instagram' type='logo' color='#f0f0fa' ></box-icon>
-        </a>
-        
+        <a href='mailto:mendezoliver2108@gmail.com'><FontAwesomeIcon icon={faEnvelope} 
+        style={
+        {color:'#f4f6f8',
+        fontSize:'20'}}/></a>
         </div>
     </footer>
   )

@@ -12,6 +12,7 @@ import './components/footer/footer.css'
 import './utils/scrollHeader'
 import { useState } from 'react';
 
+
 function App() {
     const [dark, setDark] = useState(false)
   return (
@@ -26,17 +27,15 @@ function App() {
       <Routes>
   
         <Route element={<NavBarPage setDark={setDark} dark={dark}/>}>
-        
         <Route path='/' element={<HomePage dark={dark}/>}  />
         <Route path='/about' element={<AboutPage dark={dark}/>}  />
         <Route path='/projects' element={<ProjectsPage dark={dark}/>}  />
         <Route path='/contact' element={<ContactPage  dark={dark}/>}  />
         <Route path='*' element={<Error404/>} />
+
         </Route>
-
-        
       </Routes>
-
+      
     </div>
     </>
   )

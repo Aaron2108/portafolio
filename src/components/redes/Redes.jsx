@@ -1,35 +1,33 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './redes.css'
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 const Redes = () => {
   return (
     <>
     <article className='article_redes'>
         <div className='icon_linked'>
         <a href='https://www.linkedin.com/in/oliver-mendez2108/' target='blank'>Linkedin</a>    
-        <box-icon name='linkedin-square' 
-        type='logo' 
-        color='#f4f6f8'
-        size='35px'
-        ></box-icon>
+        <FontAwesomeIcon icon={faLinkedinIn} 
+        style={
+        {color:'#f4f6f8',
+        fontSize:'30px'}}/>
         </div>
 
         <div className='icon_github'>
         <a href='https://github.com/Aaron2108' target='blank'>GitHub</a>
-        <box-icon 
-        name='github' 
-        type='logo' 
-        color='#f4f6f8' 
-        size='35px'
-        ></box-icon>
+        <FontAwesomeIcon icon={faGithub} 
+        style={
+        {color:'#f4f6f8',
+        fontSize:'30px'}}/>
         </div>
 
         <div className='icon_gmail'>
         <a href='mailto:mendezoliver2108@gmail.com'>Email</a>
-        <box-icon 
-        name='gmail' 
-        type='logo' 
-        color='#f4f6f8' 
-        size='35px'
-        ></box-icon>
+        <FontAwesomeIcon icon={faEnvelope} 
+        style={
+        {color:'#f4f6f8',
+        fontSize:'30px'}}/>
         </div>
     </article>
 
