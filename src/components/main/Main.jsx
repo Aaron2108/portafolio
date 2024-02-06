@@ -4,10 +4,13 @@ import ProjectsPage from '../../pages/ProjectsPage'
 import ContactPage from '../../pages/ContactPage'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faArrowCircleUp } from '@fortawesome/free-solid-svg-icons';
+import flechaUp from "../../utils/flechaUp"
+
 
 const Main = ({dark}) => {
   return (
-    <><main className='main_home'>
+    <><main className='main_home' id="up">
     <section  className="inicio darkInicio">
         <article  className={`texto_inicio ${dark === true ? 'inicio_dark' : ''}`}>
             <h1 className="saludo">¡Hola! <span>👋</span> </h1>
@@ -64,6 +67,9 @@ const Main = ({dark}) => {
     <AboutPage/>
     <ProjectsPage/>
     <ContactPage/>
+    <div className="circle_flechaUp" id="up"  onClick={flechaUp} >
+       <FontAwesomeIcon icon={faArrowCircleUp} fontSize={50}/>
+    </div>
     </>
   )
 }

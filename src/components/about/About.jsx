@@ -13,8 +13,6 @@ const About = ({dark}) => {
   return (
     <div>
       <section
-      // data-aos="fade-left"
-      // data-aos-delay = "150"
       data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
       className='section_aboutMe'>
@@ -42,8 +40,8 @@ const About = ({dark}) => {
 
         <article data-aos="fade-up-right" className='article_frase'>
         <p className={`frase ${dark === true ? 'frase_dark' : ''}`}>"La vida es una sucesión constante de oportunidades. No se trata solo de reconocerlas, sino de tener el coraje de aprovecharlas cuando se presentan."
-        <h2 className='frase_autor'>-Jack Canfield</h2>
         </p>
+        <h2 className='frase_autor'>-Jack Canfield</h2>
         
         </article>
 

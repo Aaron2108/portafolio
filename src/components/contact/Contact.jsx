@@ -9,7 +9,7 @@ const Contact = () => {
 
           <form className='formulario' action="https://formspree.io/f/mjvnkwva  " method='POST'>
               <div className='div_form'>
-              <label  className='label_form' htmlFor="">Nombre</label>
+              <label  className='label_form' htmlFor=""   >Nombre</label>
               <input className='input_form' type="text" name='nombre'/> <br/>
               </div>
 
