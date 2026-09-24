@@ -11,7 +11,7 @@ export const personalInfo = {
   bioShort: "Desarrollador Frontend especializado en el ecosistema React, JavaScript moderno y diseño de interfaces interactivas de alto impacto.",
   bioLong: [
     "¡Hola! Soy Oliver Mendez, desarrollador Frontend ubicado en Lima, Perú. Me apasiona transformar ideas y prototipos complejos en interfaces web dinámicas, cinematográficas, intuitivas y responsivas.",
-    "Cuento con una sólida base técnica construida con JavaScript moderno (ES6+), React, Redux, TailwindCSS y consumo de APIs REST. Mi enfoque combina código limpio, arquitectura escalable y una obsesión por los detalles visuales y la experiencia de usuario (UX/UI).",
+    "Cuento con una sólida base técnica construida con JavaScript moderno (ES6+), React, Redux, TailwindCSS y consumo e integración de APIs REST con servicios backend. Mi enfoque combina código limpio, arquitectura escalable y soluciones orientadas al rendimiento y la seguridad.",
     "Estoy enfocado en sumarme a un equipo innovador donde pueda aportar valor inmediato, colaborar con ingenieros experimentados y seguir creciendo como profesional tech."
   ],
   quote: "La vida es una sucesión constante de oportunidades. No se trata solo de reconocerlas, sino de tener el coraje de aprovecharlas cuando se presentan.",

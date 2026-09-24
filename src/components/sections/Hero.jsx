@@ -16,7 +16,7 @@ import "./hero.css";
 const roles = [
   "Frontend Developer",
   "Especialista en React",
-  "UI/UX Enthusiast",
+  "Backend Developer",
   "JavaScript Lover"
 ];
 
