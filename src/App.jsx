@@ -8,6 +8,7 @@ import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/layout/Footer";
 import FloatingWhatsApp from "./components/ui/FloatingWhatsApp";
+import ScrollToTop from "./components/ui/ScrollToTop";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
 
         <Footer />
         <FloatingWhatsApp />
+        <ScrollToTop />
       </div>
     </>
   );
