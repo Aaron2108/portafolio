@@ -72,10 +72,13 @@ const About = () => {
             <div className="about-image-card glass-panel">
               <div className="image-card-glow" />
               <img
-                src="/img/aboutme.png"
+                src="/img/aboutme.webp"
                 alt="Oliver Mendez Programando"
                 className="about-illustration"
+                width="592"
+                height="422"
                 loading="lazy"
+                decoding="async"
               />
             </div>
 

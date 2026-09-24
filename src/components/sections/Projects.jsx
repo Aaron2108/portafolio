@@ -69,7 +69,10 @@ const Projects = () => {
                   src={project.image}
                   alt={`Captura del proyecto ${project.title}`}
                   className="project-image"
+                  width="600"
+                  height="360"
                   loading="lazy"
+                  decoding="async"
                 />
 
                 {/* Floating Featured Badge */}

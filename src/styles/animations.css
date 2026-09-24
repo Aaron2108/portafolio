@@ -45,19 +45,19 @@
   }
 }
 
-/* Pulse radar glow for status indicator */
-@keyframes radarPulse {
+/* Pulse radar glow for status indicator (100% GPU Composited: transform & opacity) */
+@keyframes radarPulseWave {
   0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    transform: scale(1);
+    opacity: 0.8;
   }
   70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+    transform: scale(2.6);
+    opacity: 0;
   }
   100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    transform: scale(2.6);
+    opacity: 0;
   }
 }
 
@@ -114,15 +114,31 @@
 /* Utility classes for animations */
 .animate-float {
   animation: cinematicFloat 6s ease-in-out infinite;
+  will-change: transform;
 }
 
 .animate-float-delayed {
   animation: cinematicFloatReverse 7s ease-in-out infinite;
   animation-delay: -3s;
+  will-change: transform;
 }
 
 .animate-pulse-radar {
-  animation: radarPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  position: relative;
+}
+
+.animate-pulse-radar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background-color: inherit;
+  animation: radarPulseWave 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  pointer-events: none;
+  will-change: transform, opacity;
 }
 
 .animate-gradient-text {

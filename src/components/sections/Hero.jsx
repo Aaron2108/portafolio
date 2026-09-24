@@ -148,10 +148,14 @@ const Hero = () => {
             <div className="avatar-conic-frame">
               <div className="avatar-inner-glow">
                 <img
-                  src="/img/Perfil.png"
+                  src="/img/Perfil.webp"
                   alt={`Foto de perfil de ${personalInfo.name}`}
                   className="avatar-image"
+                  width="400"
+                  height="400"
                   loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
                 />
               </div>
             </div>
