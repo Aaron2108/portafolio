@@ -1,0 +1,131 @@
+/* ==========================================================================
+   CINEMATIC KEYFRAME ANIMATIONS & GLOW UTILITIES
+   ========================================================================== */
+
+/* Shimmer gradient moving across text or surfaces */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Subtle continuous floating for elements */
+@keyframes cinematicFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0.8deg);
+  }
+}
+
+/* Floating reverse */
+@keyframes cinematicFloatReverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(-0.8deg);
+  }
+}
+
+/* Rotating conic gradient border for profile and cards */
+@keyframes spinConic {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Pulse radar glow for status indicator */
+@keyframes radarPulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+/* Cosmic background orb pulsing */
+@keyframes orbPulse {
+  0%, 100% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scale(1.15) translate(20px, -20px);
+    opacity: 0.55;
+  }
+}
+
+/* Mouse scroll indicator drop */
+@keyframes scrollWheelDrop {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(14px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+/* Fade in up entry */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Shimmer scanline effect for cards */
+@keyframes cardShimmer {
+  0% {
+    transform: translateX(-100%) rotate(25deg);
+  }
+  100% {
+    transform: translateX(200%) rotate(25deg);
+  }
+}
+
+/* Utility classes for animations */
+.animate-float {
+  animation: cinematicFloat 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: cinematicFloatReverse 7s ease-in-out infinite;
+  animation-delay: -3s;
+}
+
+.animate-pulse-radar {
+  animation: radarPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-gradient-text {
+  background-size: 200% auto;
+  animation: gradientFlow 4s linear infinite;
+}

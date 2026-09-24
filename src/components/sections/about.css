@@ -1,0 +1,235 @@
+.about-section {
+  position: relative;
+}
+
+/* Stats Cards Grid */
+.about-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.stat-card {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--gradient-brand);
+  opacity: 0.6;
+}
+
+.stat-value {
+  font-family: var(--font-heading);
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+}
+
+.stat-detail {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Main Grid Layout */
+.about-main-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+/* Bio Narrative */
+.about-narrative {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.narrative-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  background: rgba(139, 92, 246, 0.12);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--accent-violet);
+  width: fit-content;
+  margin-bottom: 1.5rem;
+}
+
+.narrative-paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.narrative-p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+/* Hobbies */
+.about-hobbies-section {
+  border-top: 1px solid var(--border-glass);
+  padding-top: 1.5rem;
+}
+
+.hobbies-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.hobbies-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.hobby-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.85rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-glass);
+  border-radius: 9999px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all 0.25s ease;
+}
+
+.hobby-chip:hover {
+  background: rgba(6, 182, 212, 0.12);
+  border-color: rgba(6, 182, 212, 0.4);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.hobby-icon {
+  font-size: 1rem;
+}
+
+/* Visual Column */
+.about-visual-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-image-card {
+  position: relative;
+  overflow: hidden;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+}
+
+.image-card-glow {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.25) 0%, transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.about-illustration {
+  max-width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.6));
+  transition: transform 0.5s ease;
+}
+
+.about-image-card:hover .about-illustration {
+  transform: scale(1.04);
+}
+
+/* Quote Card */
+.quote-card {
+  padding: 2rem;
+  position: relative;
+}
+
+.quote-icon {
+  color: var(--accent-violet);
+  font-size: 1.75rem;
+  opacity: 0.5;
+  margin-bottom: 0.8rem;
+}
+
+.quote-text {
+  font-size: 0.98rem;
+  font-style: italic;
+  color: var(--text-primary);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+.quote-author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.author-line {
+  width: 30px;
+  height: 2px;
+  background: var(--gradient-brand);
+}
+
+.author-name {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .about-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-narrative {
+    padding: 1.75rem;
+  }
+}

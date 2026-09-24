@@ -1,44 +1,46 @@
-import { Route, Routes } from 'react-router-dom';
-import { Analytics } from '@vercel/analytics/react';
-import './App.css'
-import ParticlesBackground from './components/particlesBG/ParticlesBackground';
-import NavBarPage from './pages/NavBarPage';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import ProjectsPage from './pages/ProjectsPage';
-import ContactPage from './pages/ContactPage';
-import Error404 from './pages/Error404';
-import './components/footer/footer.css'
-import './utils/scrollHeader'
-import { useState } from 'react';
-
+import { Analytics } from "@vercel/analytics/react";
+import StarfieldCanvas from "./components/canvas/StarfieldCanvas";
+import Navbar from "./components/layout/Navbar";
+import Hero from "./components/sections/Hero";
+import About from "./components/sections/About";
+import Skills from "./components/sections/Skills";
+import Projects from "./components/sections/Projects";
+import Contact from "./components/sections/Contact";
+import Footer from "./components/layout/Footer";
+import FloatingWhatsApp from "./components/ui/FloatingWhatsApp";
 
 function App() {
-    const [dark, setDark] = useState(false)
   return (
     <>
-    <Analytics />
+      <Analytics />
 
-    <div>    
+      {/* Interactive Constellation Particle Canvas */}
+      <StarfieldCanvas />
 
-      {/*Rutas */}
-      <ParticlesBackground/>
+      {/* Atmospheric Ambient Glow Blobs */}
+      <div className="ambient-glow-wrapper" aria-hidden="true">
+        <div className="ambient-orb ambient-orb-1" />
+        <div className="ambient-orb ambient-orb-2" />
+        <div className="ambient-orb ambient-orb-3" />
+      </div>
 
-      <Routes>
-  
-        <Route element={<NavBarPage setDark={setDark} dark={dark}/>}>
-        <Route path='/' element={<HomePage dark={dark}/>}  />
-        <Route path='/about' element={<AboutPage dark={dark}/>}  />
-        <Route path='/projects' element={<ProjectsPage dark={dark}/>}  />
-        <Route path='/contact' element={<ContactPage  dark={dark}/>}  />
-        <Route path='*' element={<Error404/>} />
+      {/* Main Single Page Layout */}
+      <div className="portfolio-app-root">
+        <Navbar />
 
-        </Route>
-      </Routes>
-      
-    </div>
+        <main id="main-content">
+          <Hero />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+        </main>
+
+        <Footer />
+        <FloatingWhatsApp />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

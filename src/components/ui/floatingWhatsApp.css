@@ -1,0 +1,86 @@
+.floating-wasap-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.wasap-btn-inner {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.wasap-btn-icon {
+  font-size: 1.85rem;
+}
+
+.wasap-online-badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #10B981;
+  border: 2px solid #060814;
+}
+
+.wasap-tooltip {
+  background: rgba(13, 19, 39, 0.95);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-glass);
+  color: #FFFFFF;
+  padding: 0.45rem 0.95rem;
+  border-radius: 9999px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transform: translateX(10px);
+  pointer-events: none;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.floating-wasap-btn:hover .wasap-btn-inner {
+  transform: scale(1.1) rotate(6deg);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+}
+
+.floating-wasap-btn:hover .wasap-tooltip {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (max-width: 600px) {
+  .floating-wasap-btn {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .wasap-btn-inner {
+    width: 48px;
+    height: 48px;
+  }
+
+  .wasap-btn-icon {
+    font-size: 1.6rem;
+  }
+
+  .wasap-tooltip {
+    display: none;
+  }
+}
