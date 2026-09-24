@@ -6,8 +6,8 @@ export const personalInfo = {
   email: "mendezoliver2108@gmail.com",
   phone: "+51 900 900 306",
   whatsappUrl: "https://api.whatsapp.com/send?phone=51900900306&text=Hola%20Oliver,%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar%20contigo.",
-  cvUrl: "/dowload/cv_actual_mendez.pdf",
-  cvFileName: "CV_Oliver_Mendez_Frontend.pdf",
+  cvUrl: "/dowload/OliverMendezCVATS.pdf",
+  cvFileName: "OliverMendezCVATS.pdf",
   bioShort: "Desarrollador Frontend especializado en el ecosistema React, JavaScript moderno y diseño de interfaces interactivas de alto impacto.",
   bioLong: [
     "¡Hola! Soy Oliver Mendez, desarrollador Frontend ubicado en Lima, Perú. Me apasiona transformar ideas y prototipos complejos en interfaces web dinámicas, cinematográficas, intuitivas y responsivas.",
